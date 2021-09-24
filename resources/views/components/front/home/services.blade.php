@@ -9,24 +9,38 @@
             <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft" data-wow-delay=".3s"
                  data-background="img/1.jpg">
                 <h4 class="custom-font">en iyi <br> yaptıklarımız</h4>
-                <a href="about.html" class="btn-curve btn-bord btn-lit mt-40"><span>hepsini gör</span></a>
+                <a href="{{route('services.list')}}" class="btn-curve btn-bord btn-lit mt-40"><span>hepsini gör</span></a>
             </div>
-            <div class="col-lg-3 col-md-6 item-box wow fadeInLeft" data-wow-delay=".5s">
-                <span class="icon pe-7s-paint-bucket"></span>
-                <h6>Graphic Design</h6>
-                <p>Tempore corrupti temporibus fuga earum asperiores fugit laudantium.</p>
-            </div>
-            <div class="col-lg-3 col-md-6 item-box wow fadeInLeft" data-wow-delay=".7s">
-                <span class="icon pe-7s-phone"></span>
-                <h6>Web & <br> Mobile Design</h6>
-                <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
-            </div>
-            <div class="col-lg-3 col-md-6 item-box wow fadeInLeft" data-wow-delay=".9s">
-                <span class="icon pe-7s-display1"></span>
-                <h6>Social <br> media Marketing</h6>
-                <p>Tempore corrupti temporibus fuga earum asperiores fugit.</p>
-            </div>
+            @foreach($services as $service)
+                <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft"
+                     data-background="{{ ImageHelper::getImage(json_decode($service->images,true)[0]['image'], 300, 350) }}"
+                     data-wow-delay=".5s">
+                    <h4 class="custom-font">{{$service->title}}</h4>
+                    <p class="text-white">{{$service->description}}</p>
+                </div>
+            @endforeach
         </div>
     </div>
     <div class="half-bg bottom"></div>
 </section>
+
+<style>
+    /*
+    .services .item-box:before
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }*/
+    .services .item-box
+    {
+        background-position: center center !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+    }
+
+
+</style>

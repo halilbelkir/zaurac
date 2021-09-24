@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
-
-    <!-- Metas -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <meta name="keywords" content="aaaa" />
-    <meta name="description" content="aaaa" />
+    <meta name="keywords" content="{{$keywords}}" />
+    <meta name="description" content="{{$description}}" />
+    <meta property="og:image" content="{{$ogImage}}" >
+    <meta property="og:title" style="text-transform:capitalize;" content="{{$metaTitle}}">
     <meta name="author" content="Zaurac"/>
-    <title>Zaurac</title>
-
-    <!-- Favicon -->
+    <title>{{$metaTitle}}</title>
     <link rel="shortcut icon" href="{{asset('images/fav.png')}}" />
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap"
-          rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/front/front.css')}}" />
     @yield('css')
+    @yield('preload')
 </head>
 
 <body>
@@ -87,22 +77,22 @@
                                     <a href="{{route('clients')}}" class="link"><span class="nm">04.</span> referanslarımız</a>
                                 </div>
                             </li>
-
+<!--
                             <li>
                                 <div class="o-hidden">
                                     <a href="{{route('projects.list')}}" class="link"><span class="nm">05.</span> projelerimiz</a>
                                 </div>
                             </li>
-
+-->
                             <li>
                                 <div class="o-hidden">
-                                    <a href="{{route('blog.list')}}" class="link"><span class="nm">06.</span> zauracblog</a>
+                                    <a href="{{route('blog.list')}}" class="link"><span class="nm">05.</span> zauracblog</a>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="o-hidden">
-                                    <a href="{{route('contact')}}" class="link"><span class="nm">07.</span> iletişim</a>
+                                    <a href="{{route('contact')}}" class="link"><span class="nm">06.</span> iletişim</a>
                                 </div>
                             </li>
                         </ul>
@@ -112,15 +102,15 @@
                     <div class="cont-info">
                         <div class="item">
                             <h6>telefon :</h6>
-                            <p>+90 534-223-3232</p>
+                            <p>{{$settings->telefon}}</p>
                         </div>
                         <div class="item">
                             <h6>adres :</h6>
-                            <p>çamlık mahallesi emre sokak no:24 daire:7 çekmeköy/istanbul</p>
+                            <p>{{$settings->adres}}</p>
                         </div>
                         <div class="item">
                             <h6>email :</h6>
-                            <p><a href="mailto:merhaba@zaurac.io">merhaba@zaurac.io</a></p>
+                            <p><a href="mailto:{{$settings->email}}">{{$settings->email}}</a></p>
                         </div>
                     </div>
                 </div>

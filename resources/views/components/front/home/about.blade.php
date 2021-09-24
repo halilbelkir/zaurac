@@ -29,8 +29,8 @@
                         <span></span>
                     </div>
                     <h3 class="main-title wow" data-splitting>Biz bir dijital ajanstan <br> daha fazlasıyız.</h3>
-                    <p class="wow txt" data-splitting>.....</p>
-                    <a href="contact.html" class="btn-curve btn-blc wow fadeInUp" data-wow-delay=".5s"><span>devam et</span></a>
+                    <p class="wow txt mb-3" data-splitting>{{$settings->description}}</p>
+                    <a href="{{route('about')}}" class="btn-curve btn-blc wow fadeInUp" data-wow-delay=".5s"><span>devam et</span></a>
                 </div>
             </div>
         </div>

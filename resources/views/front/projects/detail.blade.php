@@ -65,10 +65,10 @@
     </section>
     <x-front.home.contact></x-front.home.contact>
     @section('css')
-        <link rel="stylesheet" href="{{asset('css/front/simpleLightbox.min.css')}}" />
+        <link rel="stylesheet" href="{{asset('front/css/simpleLightbox.min.css')}}" />
     @endsection
     @section('js')
-        <script src="{{asset('js/front/simpleLightbox.min.js')}}"></script>
+        <script src="{{asset('front/js/simpleLightbox.min.js')}}"></script>
         <script>
 
             $('.justified-gallery a').simpleLightbox();

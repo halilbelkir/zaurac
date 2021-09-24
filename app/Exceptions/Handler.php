@@ -2,7 +2,9 @@
 
 namespace App\Exceptions;
 
+use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Route;
 use Throwable;
 
 class Handler extends ExceptionHandler
@@ -37,5 +39,17 @@ class Handler extends ExceptionHandler
         $this->reportable(function (Throwable $e) {
             //
         });
+    }
+
+    public function render($request, Throwable $exception)
+    {
+        $statusCode = method_exists($exception, 'getStatusCode') ? $exception->getStatusCode() : 200;
+
+        if($statusCode != 200)
+        {
+            return redirect()->route('notfound');
+        }
+
+        return parent::render($request, $exception);
     }
 }

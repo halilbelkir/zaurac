@@ -11,9 +11,11 @@ class blog extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $blog;
+    public function __construct($blog)
     {
-        //
+        $this->blog = $blog;
     }
 
     /**

@@ -61,7 +61,7 @@ $(function () {
 
         if (open) {
 
-            $('.hamenu').animate({ left: 0 });
+            $('.hamenu').animate({ left: 0 },100);
 
             $('.topnav .menu-icon .text').addClass('open');
 
@@ -863,3 +863,10 @@ $('[data-carousel="swiper"]').each(function () {
         var init = new Swiper(initID, conf);
     };
 });
+(function () {
+    var callback_loaded = function (element) {
+        $('[data-ll-status="loaded"]').removeClass("lazy");
+        $('[data-ll-status="loaded"]').closest(".home-location-lazy").removeClass("home-location-lazy");
+    };
+    new LazyLoad({ callback_loaded: callback_loaded });
+})();

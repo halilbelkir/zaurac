@@ -13,13 +13,15 @@ const mix = require('laravel-mix');
 const Public = 'public/';
 mix.js('resources/js/app.js', 'public/js')
     .postCss('resources/css/app.css', 'public/css', [
-        //
+        require('postcss-import'),
+        require('tailwindcss'),
     ])
     .combine(
         [
             Public + 'front/js/jquery-3.0.0.min.js',
             Public + 'front/js/jquery-migrate-3.0.0.min.js',
             Public + 'front/js/plugins.js',
+            Public + 'front/js/lazyload.min.js',
             Public + 'front/js/scripts.js',
         ], Public + 'js/front/front.js')
     .styles(

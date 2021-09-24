@@ -11,9 +11,11 @@ class clients extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $clients;
+    public function __construct($clients)
     {
-        //
+        $this->clients = $clients;
     }
 
     /**

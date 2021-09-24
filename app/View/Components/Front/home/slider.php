@@ -11,9 +11,11 @@ class slider extends Component
      *
      * @return void
      */
-    public function __construct()
+
+    public $slider;
+    public function __construct($slider)
     {
-        //
+        $this->slider = $slider;
     }
 
     /**

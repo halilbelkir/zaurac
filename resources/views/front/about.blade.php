@@ -16,32 +16,8 @@
                     </div>
                 </div>
                 <div class="col-lg-10 col-md-8">
-                    <div class="text">
-                        <p class="wow txt" data-splitting>
-                            We develop creative solutions for small and big brands alike, build authentic product
-                            identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non
-                            facilisis vitae eu. Ultrices ut diam morbi risus dui, nec eget at lorem in id tristique
-                            in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio
-                            posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus
-                            risus vitae feugiat fames aliquet sed.
-                            We develop creative solutions for small and big brands alike, build authentic product
-                            identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non
-                            facilisis vitae eu. Ultrices ut diam morbi risus dui, nec eget at lorem in id tristique
-                            in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio
-                            posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus
-                            risus vitae feugiat fames aliquet sed.
-                            We develop creative solutions for small and big brands alike, build authentic product
-                            identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non
-                            facilisis vitae eu. Ultrices ut diam morbi risus dui, nec eget at lorem in id tristique
-                            in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio
-                            posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus
-                            risus vitae feugiat fames aliquet sed.
-                            We develop creative solutions for small and big brands alike, build authentic product
-                            identities and much more.Lorem ipsum dolor sit amet, consectetur adipiscing elit sit non
-                            facilisis vitae eu. Ultrices ut diam morbi risus dui, nec eget at lorem in id tristique
-                            in elementum leo nisi eleifend placerat magna lacus elementum ornare vehicula odio
-                            posuere quisque ultrices tempus cras id blandit maecenas in ornare quis dolor tempus
-                            risus vitae feugiat fames aliquet sed.</p>
+                    <div class="text wow txt" data-splitting>
+                        {!! $settings->hakkimizda !!}
                     </div>
                 </div>
             </div>
