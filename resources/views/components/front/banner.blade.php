@@ -1,4 +1,4 @@
-<header class="pages-header bg-img valign parallaxie" data-background="{{asset($image)}}" data-overlay-dark="5">
+<header class="pages-header bg-img valign parallaxie" data-background="{{ ImageHelper::getImage($image, 1920, 726) }}" data-overlay-dark="5">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">

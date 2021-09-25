@@ -10,13 +10,10 @@
     <meta property="og:title" style="text-transform:capitalize;" content="{{$metaTitle}}">
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
-    <link rel="shortcut icon" href="{{asset('images/fav.png')}}" />
+    <link rel="shortcut icon" href="{{asset('front/images/fav.png')}}" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,500,600,700,800,900&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{mix('css/front/front.css')}}" />
     @yield('css')
@@ -46,7 +43,7 @@
                             <i></i>
                             <i></i>
                         </span>
-                <span class="text" data-splitting>Menü</span>
+                <span class="text" data-splitting>menü</span>
             </div>
         </div>
     </div>

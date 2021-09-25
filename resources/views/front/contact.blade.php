@@ -1,9 +1,8 @@
 <x-front.front>
     <x-slot name="header">
-        <x-front.banner>
+        <x-front.banner :image="'front/images/contact.jpg'">
             <x-slot name="title">iletişim</x-slot>
             <x-slot name="oneStep">iletişim</x-slot>
-            <x-slot name="image">front/images/3.jpg</x-slot>
         </x-front.banner>
     </x-slot>
     <section class="contact section-padding">
@@ -19,17 +18,17 @@
                             <div class="controls">
 
                                 <div class="form-group">
-                                    <input id="form_name" type="text" name="name" placeholder="Ad & Soyad"
+                                    <input id="form_name" type="text" name="name" placeholder="ad & soyad"
                                            required="required">
                                 </div>
 
                                 <div class="form-group">
-                                    <input id="email" type="email" name="email" placeholder="Email"
+                                    <input id="email" type="email" name="email" placeholder="e-mail"
                                            required="required">
                                 </div>
 
                                 <div class="form-group">
-                                        <textarea id="form_message" name="message" placeholder="Mesaj" rows="4"
+                                        <textarea id="form_message" name="message" placeholder="mesaj" rows="4"
                                                   required="required"></textarea>
                                 </div>
 

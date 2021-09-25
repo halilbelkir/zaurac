@@ -1,11 +1,10 @@
 <x-front.front>
     <x-slot name="header">
-        <x-front.banner>
+        <x-front.banner :image="json_decode($blog->images,true)[0]['image']">
             <x-slot name="title">{{$blog->title}}</x-slot>
             <x-slot name="oneStep">zauracblog</x-slot>
             <x-slot name="twoStep">{{$blog->title}}</x-slot>
             <x-slot name="oneStepLink">{{route('blog.list')}}</x-slot>
-            <x-slot name="image">{{json_decode($blog->images,true)[0]['image']}}</x-slot>
         </x-front.banner>
     </x-slot>
 

@@ -22,8 +22,8 @@ $(function () {
     wind.on("scroll", function () {
 
         var bodyScroll = wind.scrollTop(),
-            navbar = $(".navbar"),
-            logo = $(".navbar.change .logo> img");
+            navbar = $(".topnav.dark"),
+            logo = $(".topnav.dark .logo> img");
 
         if (bodyScroll > 300) {
 

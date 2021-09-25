@@ -1,9 +1,8 @@
 <x-front.front>
     <x-slot name="header">
-        <x-front.banner>
+        <x-front.banner :image="'front/images/blog.jpg'">
             <x-slot name="title">zauracblog</x-slot>
             <x-slot name="oneStep">zauracblog</x-slot>
-            <x-slot name="image">front/images/3.jpg</x-slot>
         </x-front.banner>
     </x-slot>
 

@@ -24,15 +24,17 @@
                     <x-jet-nav-link href="{{ route('blog.index') }}" :active="request()->routeIs('blog.index')">
                         {{ __('Blog') }}
                     </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('media.index') }}" :active="request()->routeIs('media.index')">
-                        {{ __('Basında Biz') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('awards.index') }}" :active="request()->routeIs('awards.index')">
-                        {{ __('Ödüller') }}
-                    </x-jet-nav-link>
-                    <x-jet-nav-link href="{{ route('gallery.index') }}" :active="request()->routeIs('gallery.index')">
-                        {{ __('Galeri') }}
-                    </x-jet-nav-link>
+                    @if(1 == 2)
+                        <x-jet-nav-link href="{{ route('media.index') }}" :active="request()->routeIs('media.index')">
+                            {{ __('Basında Biz') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('awards.index') }}" :active="request()->routeIs('awards.index')">
+                            {{ __('Ödüller') }}
+                        </x-jet-nav-link>
+                        <x-jet-nav-link href="{{ route('gallery.index') }}" :active="request()->routeIs('gallery.index')">
+                            {{ __('Galeri') }}
+                        </x-jet-nav-link>
+                    @endif
                     <x-jet-nav-link href="{{ route('references.index') }}" :active="request()->routeIs('references.index')">
                         {{ __('Referanslar') }}
                     </x-jet-nav-link>
@@ -113,22 +115,23 @@
 
                         <x-slot name="content">
                             <!-- Account Management -->
+                            @if(1 == 2)
+                                <x-jet-dropdown-link href="{{ route('pages.edit',1) }}">
+                                    {{ __('Eğitimler') }}
+                                </x-jet-dropdown-link>
 
-                            <x-jet-dropdown-link href="{{ route('pages.edit',1) }}">
-                                {{ __('Eğitimler') }}
-                            </x-jet-dropdown-link>
-
-                            <x-jet-dropdown-link href="{{ route('pages.edit',2) }}">
-                                {{ __('Online Danış.') }}
-                            </x-jet-dropdown-link>
-
+                                <x-jet-dropdown-link href="{{ route('pages.edit',2) }}">
+                                    {{ __('Online Danış.') }}
+                                </x-jet-dropdown-link>
+                                <x-jet-dropdown-link href="{{ route('team.index') }}">
+                                    {{ __('Ekibimiz') }}
+                                </x-jet-dropdown-link>
+                            @endif
                             <x-jet-dropdown-link href="{{ route('users.index') }}">
                                 {{ __('Kullanıcılar') }}
                             </x-jet-dropdown-link>
 
-                            <x-jet-dropdown-link href="{{ route('team.index') }}">
-                                {{ __('Ekibimiz') }}
-                            </x-jet-dropdown-link>
+
 
                             <x-jet-dropdown-link href="{{ route('form.index') }}">
                                 {{ __('Talepler') }}
@@ -192,15 +195,17 @@
             <x-jet-responsive-nav-link href="{{ route('blog.index') }}" :active="request()->routeIs('blog.index')">
                 {{ __('Blog') }}
             </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('media.index') }}" :active="request()->routeIs('media.index')">
-                {{ __('Basında Biz') }}
-            </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('awards.index') }}" :active="request()->routeIs('awards.index')">
-                {{ __('Ödüller') }}
-            </x-jet-responsive-nav-link>
-            <x-jet-responsive-nav-link href="{{ route('gallery.index') }}" :active="request()->routeIs('gallery.index')">
-                {{ __('Galeri') }}
-            </x-jet-responsive-nav-link>
+            @if(1 == 2)
+                <x-jet-responsive-nav-link href="{{ route('media.index') }}" :active="request()->routeIs('media.index')">
+                    {{ __('Basında Biz') }}
+                </x-jet-responsive-nav-link>
+                <x-jet-responsive-nav-link href="{{ route('awards.index') }}" :active="request()->routeIs('awards.index')">
+                    {{ __('Ödüller') }}
+                </x-jet-responsive-nav-link>
+                <x-jet-responsive-nav-link href="{{ route('gallery.index') }}" :active="request()->routeIs('gallery.index')">
+                    {{ __('Galeri') }}
+                </x-jet-responsive-nav-link>
+            @endif
             <x-jet-responsive-nav-link href="{{ route('references.index') }}" :active="request()->routeIs('references.index')">
                 {{ __('Referanslar') }}
             </x-jet-responsive-nav-link>
@@ -228,21 +233,25 @@
                         {{ __('API Tokens') }}
                     </x-jet-responsive-nav-link>
                 @endif
-                <x-jet-responsive-nav-link href="{{ route('pages.edit',1) }}">
-                    {{ __('Eğitimler') }}
-                </x-jet-responsive-nav-link>
 
-                <x-jet-responsive-nav-link href="{{ route('pages.edit',2) }}">
-                    {{ __('Online Danış.') }}
-                </x-jet-responsive-nav-link>
+                @if(1 == 2)
+                    <x-jet-responsive-nav-link href="{{ route('pages.edit',1) }}">
+                        {{ __('Eğitimler') }}
+                    </x-jet-responsive-nav-link>
 
+                    <x-jet-responsive-nav-link href="{{ route('pages.edit',2) }}">
+                        {{ __('Online Danış.') }}
+                    </x-jet-responsive-nav-link>
+                    <x-jet-responsive-nav-link href="{{ route('team.index') }}">
+                        {{ __('Ekibimiz') }}
+                    </x-jet-responsive-nav-link>
+
+                @endif
                 <x-jet-responsive-nav-link href="{{ route('users.index') }}">
                     {{ __('Kullanıcılar') }}
                 </x-jet-responsive-nav-link>
 
-                <x-jet-responsive-nav-link href="{{ route('team.index') }}">
-                    {{ __('Ekibimiz') }}
-                </x-jet-responsive-nav-link>
+
 
                 <x-jet-responsive-nav-link href="{{ route('form.index') }}">
                     {{ __('Talepler') }}
