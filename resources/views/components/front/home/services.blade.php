@@ -14,13 +14,11 @@
             @foreach($services as $service)
                 <a
                     class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft"
+                    data-background="{{ ImageHelper::getImage(json_decode($service->images,true)[0]['image'], 300, 350) }}"
+                    data-wow-delay=".5s"
                     href="{{route('services.detail',$service->seflink)}}">
-                    <div
-                         data-background="{{ ImageHelper::getImage(json_decode($service->images,true)[0]['image'], 300, 350) }}"
-                         data-wow-delay=".5s">
-                        <h4 class="custom-font">{{$service->title}}</h4>
-                        <p class="text-white">{{$service->description}}</p>
-                    </div>
+                    <h4 class="custom-font">{{$service->title}}</h4>
+                    <p class="text-white">{{$service->description}}</p>
                 </a>
             @endforeach
         </div>
