@@ -37,6 +37,24 @@
         width: 100%;
         height: 100%;
     }*/
+    .services .bg-img
+    {
+        -webkit-transition: all .2s;
+        -o-transition: all .2s;
+        transition: all .2s;
+    }
+    .services .bg-img:hover
+    {
+        -webkit-clip-path: inset(5px 10px);
+        clip-path: inset(5px 10px);
+        visibility: visible;
+        animation-delay: 0.2s;
+        animation-name: fadeInUp;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+
+    }
     .services .item-box
     {
         background-position: center center !important;
