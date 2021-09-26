@@ -7,7 +7,7 @@
         </div>
         <div class="row">
             <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft" data-wow-delay=".3s"
-                 data-background="img/1.jpg">
+                 data-background="{{ ImageHelper::getImage('front/images/services.jpg', 300, 350) }}">
                 <h4 class="custom-font">en iyi <br> yaptıklarımız</h4>
                 <a href="{{route('services.list')}}" class="btn-curve btn-bord btn-lit mt-40"><span>hepsini gör</span></a>
             </div>
