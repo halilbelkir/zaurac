@@ -12,13 +12,14 @@
                 <a href="{{route('services.list')}}" class="btn-curve btn-bord btn-lit mt-40"><span>hepsini gör</span></a>
             </div>
             @foreach($services as $service)
-                <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft"
-                     data-background="{{ ImageHelper::getImage(json_decode($service->images,true)[0]['image'], 300, 350) }}"
-                     data-wow-delay=".5s">
-                    <h4 class="custom-font">{{$service->title}}</h4>
-                    <p class="text-white">{{$service->description}}</p>
-                    <a href="{{route('services.list')}}" class="btn-curve btn-bord btn-lit mt-40"><span>detay</span></a>
-                </div>
+                <a href="{{route('services.detail',$service->seflink)}}">
+                    <div class="col-lg-3 col-md-6 item-box bg-img wow fadeInLeft"
+                         data-background="{{ ImageHelper::getImage(json_decode($service->images,true)[0]['image'], 300, 350) }}"
+                         data-wow-delay=".5s">
+                        <h4 class="custom-font">{{$service->title}}</h4>
+                        <p class="text-white">{{$service->description}}</p>
+                    </div>
+                </a>
             @endforeach
         </div>
     </div>
