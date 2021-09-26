@@ -15,7 +15,7 @@
                             <div class="col-md-3 col-6 brands mb-15">
                                 <div class="item wow fadeIn" data-wow-delay=".3s">
                                     <div class="img">
-                                        {!! ImageHelper::createTag($client->image,['width' =>[75], 'height' => [21]],['class'=> 'lazy','alt' => $client->url,'title' => $client->url],'lazy') !!}
+                                        {!! ImageHelper::createTag($client->image,['width' =>[130], 'height' => [40]],['class'=> 'lazy','alt' => $client->url,'title' => $client->url],'lazy') !!}
                                         <a href="{{$client->url}}" target="_blank" class="link" data-splitting>{{\App\Helpers\Helpers::urlHttpDelete($client->url)}}</a>
                                     </div>
                                 </div>
