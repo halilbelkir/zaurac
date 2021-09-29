@@ -10,13 +10,31 @@
     <meta property="og:title" style="text-transform:capitalize;" content="{{$metaTitle}}">
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
-    <link rel="shortcut icon" href="{{asset('front/images/fav.png')}}" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/front/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/front/images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/front/images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/front/images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/front/images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/front/images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/front/images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/front/images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/front/images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="/front/images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/front/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/front/images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/front/images/fav/favicon-16x16.png">
+    <meta name="msapplication-TileImage" content="/front/images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#FBC02D">
+    <link rel="manifest" href="/front/images/fav/manifest.json">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="{{mix('css/front/front.css')}}" />
+    <link rel="preload" as="style" href="{{mix('css/front/front.css')}}" onload="this.rel='stylesheet'">
     @yield('css')
+    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 60) }}" media="(min-width: 992px)">
+    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 100, 40) }}" media="(max-width: 991px)">
     @yield('preload')
 </head>
 
@@ -36,7 +54,11 @@
     <div id="navi" class="topnav">
         <div class="container-fluid">
             <div class="logo">
-                <a href="{{route('index')}}"><img src="{{asset('front/images/logo-beyaz.png')}}" alt=""></a>
+
+                <a href="{{route('index')}}">
+                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[150], 'height' => [60]],['class'=> 'lazy d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
+                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[100], 'height' => [40]],['class'=> 'lazy d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
+                </a>
             </div>
             <div class="menu-icon">
                         <span class="icon">

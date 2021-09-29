@@ -5955,7 +5955,8 @@ body {
   .topnav .container-fluid {
     padding: 0 50px; }
   .topnav .logo {
-    width: 150px; }
+    width: 150px;
+      margin-top: -18px;}
   .topnav .menu-icon {
     margin-left: auto;
     cursor: pointer; }
@@ -9407,7 +9408,12 @@ body {
   .next-prog .box .copy-cap h1 {
     font-size: 40px; } }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px)
+{
+    .pages-header .cont h1
+    {
+        font-size: 35px;
+    }
   .sm-mb10 {
     margin-bottom: 10px; }
   .sm-mb20 {
@@ -9466,7 +9472,8 @@ body {
   .topnav .container-fluid {
     padding: 0 30px; }
   .topnav .logo {
-    width: 40px; }
+      width: 100px;
+      margin-top: -9px; }
   .btn-curve {
     padding: 8px 15px; }
     .btn-curve span {

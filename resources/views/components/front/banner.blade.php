@@ -14,3 +14,6 @@
         </div>
     </div>
 </header>
+@section('preload')
+    <link rel="preload" as="image" href="{{ ImageHelper::getImage($image, 1920, 726) }}">
+@endsection
