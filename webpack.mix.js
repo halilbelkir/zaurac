@@ -37,9 +37,6 @@ mix.js('resources/js/app.js', 'public/js')
             Public + 'front/css/plugins/slick-theme.css',
             Public + 'front/css/plugins/swiper.min.css',
             Public + 'front/css/cls.css',
-        ], Public + 'css/front/front.css')
-    .styles(
-        [
             Public + 'front/css/style.css',
-        ], Public + 'css/front/preload.css')
+        ], Public + 'css/front/front.css')
     .version();
