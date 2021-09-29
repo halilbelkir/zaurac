@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="keywords" content="{{$keywords}}" />
     <meta name="description" content="{{$description}}" />
     <meta property="og:image" content="{{$ogImage}}" >
@@ -31,10 +32,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
-    <link rel="preload" as="style" href="{{mix('css/front/front.css')}}" onload="this.rel='stylesheet'">
-    @yield('css')
+    <link rel="preload" as="style" href="{{mix('css/front/preload.css')}}" onload="this.rel='stylesheet'">
     <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 60) }}" media="(min-width: 992px)">
     <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 100, 40) }}" media="(max-width: 991px)">
+    <link rel="stylesheet" type="text/css" href="{{mix('css/front/front.css')}}">
+    @yield('css')
     @yield('preload')
 </head>
 
