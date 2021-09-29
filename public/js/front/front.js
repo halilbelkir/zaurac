@@ -290,6 +290,7 @@ $(function () {
         autoplay: true,
         parallax: true,
         loop: true,
+        lazy:true,
 
         on: {
             init: function () {

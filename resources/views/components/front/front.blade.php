@@ -30,11 +30,11 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
-
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" onload="this.rel='stylesheet'">
     <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 60) }}" media="(min-width: 992px)">
     <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 100, 40) }}" media="(max-width: 991px)">
+    <link rel="preload" as="style" href="{{mix('css/front/preload.css')}}" onload="this.rel='stylesheet'">
     <link rel="stylesheet" type="text/css" href="{{mix('css/front/front.css')}}">
     @yield('css')
     @yield('preload')

@@ -26,8 +26,6 @@ mix.js('resources/js/app.js', 'public/js')
         ], Public + 'js/front/front.js')
     .styles(
         [
-            Public + 'front/css/plugins/bootstrap.min.css',
-            Public + 'front/css/plugins/animate.css',
             Public + 'front/css/plugins/ionicons.min.css',
             Public + 'front/css/plugins/pe-icon-7-stroke.css',
             Public + 'front/css/plugins/fontawesome-all.min.css',
@@ -37,6 +35,11 @@ mix.js('resources/js/app.js', 'public/js')
             Public + 'front/css/plugins/slick-theme.css',
             Public + 'front/css/plugins/swiper.min.css',
             Public + 'front/css/cls.css',
+            Public + 'front/css/plugins/animate.css',
             Public + 'front/css/style.css',
         ], Public + 'css/front/front.css')
+    .styles(
+        [
+            Public + 'front/css/plugins/bootstrap.min.css',
+        ], Public + 'css/front/preload.css')
     .version();

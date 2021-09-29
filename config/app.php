@@ -2,7 +2,7 @@
 
 return [
 
-    'loading_image' => 'front/images/loading.gif',
+    'loading_image' => 'front/images/loading.mp4',
     /*
     |--------------------------------------------------------------------------
     | Application Name
