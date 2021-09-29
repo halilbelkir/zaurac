@@ -7,7 +7,7 @@
                         <link rel="preload" as="image" href="{{ ImageHelper::getImage($slide->image, 1920, 1080) }}">
                     @endsection
                 @endif
-                <div class="swiper-slide">
+                <div class="swiper-slide c-v-auto desktop-cis-1080 tablet-cis-950 mobile-cis-640" >
                     <div class="bg-img valign" data-background="{{ ImageHelper::getImage($slide->image, 1920, 1080) }}" data-overlay-dark="6">
                         <div class="container">
                             <div class="row @if($slide->text_type == 1) @elseif($slide->text_type == 2) justify-content-end @else justify-content-center @endif">

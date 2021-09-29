@@ -1,0 +1,463 @@
+.c-v-auto
+{
+    content-visibility: auto;
+}
+
+.c-v-visible
+{
+    content-visibility: visible;
+}
+
+@media (max-width: 992px)
+{
+    .mobile-cis-80
+    {
+        contain-intrinsic-size: 80px;
+    }
+
+    .mobile-cis-90
+    {
+        contain-intrinsic-size: 90px;
+    }
+
+    .mobile-cis-100
+    {
+        contain-intrinsic-size: 100px;
+    }
+
+    .mobile-cis-120
+    {
+        contain-intrinsic-size: 120px;
+    }
+
+    .mobile-cis-145
+    {
+        contain-intrinsic-size: 145px;
+    }
+
+    .mobile-cis-150
+    {
+        contain-intrinsic-size: 150px;
+    }
+
+    .mobile-cis-180
+    {
+        contain-intrinsic-size: 180px;
+    }
+
+    .mobile-cis-200
+    {
+        contain-intrinsic-size: 200px;
+    }
+
+    .mobile-cis-250
+    {
+        contain-intrinsic-size: 250px;
+    }
+
+    .mobile-cis-280
+    {
+        contain-intrinsic-size: 280px;
+    }
+
+    .mobile-cis-300
+    {
+        contain-intrinsic-size: 300px;
+    }
+
+    .mobile-cis-310
+    {
+        contain-intrinsic-size: 310px;
+    }
+
+    .mobile-cis-330
+    {
+        contain-intrinsic-size: 330px;
+    }
+
+    .mobile-cis-380
+    {
+        contain-intrinsic-size: 380px;
+    }
+
+    .mobile-cis-410
+    {
+        contain-intrinsic-size: 410px;
+    }
+
+    .mobile-cis-440
+    {
+        contain-intrinsic-size: 440px;
+    }
+
+    .mobile-cis-460
+    {
+        contain-intrinsic-size: 460px;
+    }
+
+    .mobile-cis-500
+    {
+        contain-intrinsic-size: 500px;
+    }
+
+    .mobile-cis-550
+    {
+        contain-intrinsic-size: 550px;
+    }
+
+    .mobile-cis-640
+    {
+        contain-intrinsic-size: 640px;
+    }
+
+    .mobile-cis-650
+    {
+        contain-intrinsic-size: 650px;
+    }
+
+    .mobile-cis-710
+    {
+        contain-intrinsic-size: 710px;
+    }
+
+    .mobile-cis-860
+    {
+        contain-intrinsic-size: 860px;
+    }
+
+    .mobile-cis-1050
+    {
+        contain-intrinsic-size: 1050px;
+    }
+
+    .mobile-cis-1150
+    {
+        contain-intrinsic-size: 1150px;
+    }
+
+    .mobile-cis-1330
+    {
+        contain-intrinsic-size: 1330px;
+    }
+
+    .mobile-cis-1750
+    {
+        contain-intrinsic-size: 1750px;
+    }
+
+    .mobile-cis-1800
+    {
+        contain-intrinsic-size: 1800px;
+    }
+
+    .mobile-cis-3770
+    {
+        contain-intrinsic-size: 3770px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px)
+{
+    .tablet-cis-60
+    {
+        contain-intrinsic-size: 60px;
+    }
+
+    .tablet-cis-80
+    {
+        contain-intrinsic-size: 80px;
+    }
+
+    .tablet-cis-100
+    {
+        contain-intrinsic-size: 100px;
+    }
+
+    .tablet-cis-105
+    {
+        contain-intrinsic-size: 105px;
+    }
+
+    .tablet-cis-107
+    {
+        contain-intrinsic-size: 107px;
+    }
+
+    .tablet-cis-110
+    {
+        contain-intrinsic-size: 110px;
+    }
+
+    .tablet-cis-150
+    {
+        contain-intrinsic-size: 150px;
+    }
+
+    .tablet-cis-170
+    {
+        contain-intrinsic-size: 170px;
+    }
+
+    .tablet-cis-200
+    {
+        contain-intrinsic-size: 200px;
+    }
+
+    .tablet-cis-250
+    {
+        contain-intrinsic-size: 250px;
+    }
+
+    .tablet-cis-300
+    {
+        contain-intrinsic-size: 300px;
+    }
+
+    .tablet-cis-315
+    {
+        contain-intrinsic-size: 315px;
+    }
+
+    .tablet-cis-330
+    {
+        contain-intrinsic-size: 330px;
+    }
+
+    .tablet-cis-350
+    {
+        contain-intrinsic-size: 350px;
+    }
+
+    .tablet-cis-360
+    {
+        contain-intrinsic-size: 360px;
+    }
+
+    .tablet-cis-380
+    {
+        contain-intrinsic-size: 380px;
+    }
+
+    .tablet-cis-410
+    {
+        contain-intrinsic-size: 410px;
+    }
+
+    .tablet-cis-450
+    {
+        contain-intrinsic-size: 450px;
+    }
+
+    .tablet-cis-500
+    {
+        contain-intrinsic-size: 500px;
+    }
+
+    .tablet-cis-550
+    {
+        contain-intrinsic-size: 550px;
+    }
+
+    .tablet-cis-640
+    {
+        contain-intrinsic-size: 640px;
+    }
+
+    .tablet-cis-730
+    {
+        contain-intrinsic-size: 730px;
+    }
+
+    .tablet-cis-700
+    {
+        contain-intrinsic-size: 700px;
+    }
+
+    .tablet-cis-825
+    {
+        contain-intrinsic-size: 825px;
+    }
+
+    .tablet-cis-950
+    {
+        contain-intrinsic-size: 950px;
+    }
+
+    .tablet-cis-1200
+    {
+        contain-intrinsic-size: 1200px;
+    }
+
+    .tablet-cis-1710
+    {
+        contain-intrinsic-size: 1710px;
+    }
+
+    .tablet-cis-1800
+    {
+        contain-intrinsic-size: 1800px;
+    }
+}
+
+@media (min-width: 1200px)
+{
+    .desktop-cis-60
+    {
+        contain-intrinsic-size: 60px;
+    }
+
+    .desktop-cis-80
+    {
+        contain-intrinsic-size: 80px;
+    }
+
+    .desktop-cis-90
+    {
+        contain-intrinsic-size: 90px;
+    }
+
+    .desktop-cis-100
+    {
+        contain-intrinsic-size: 100px;
+    }
+
+    .desktop-cis-105
+    {
+        contain-intrinsic-size: 105px;
+    }
+
+    .desktop-cis-107
+    {
+        contain-intrinsic-size: 107px;
+    }
+
+    .desktop-cis-110
+    {
+        contain-intrinsic-size: 110px;
+    }
+
+    .desktop-cis-150
+    {
+        contain-intrinsic-size: 150px;
+    }
+
+    .desktop-cis-170
+    {
+        contain-intrinsic-size: 170px;
+    }
+
+    .desktop-cis-180
+    {
+        contain-intrinsic-size: 180px;
+    }
+
+    .desktop-cis-200
+    {
+        contain-intrinsic-size: 200px;
+    }
+
+    .desktop-cis-220
+    {
+        contain-intrinsic-size: 220px;
+    }
+
+    .desktop-cis-250
+    {
+        contain-intrinsic-size: 250px;
+    }
+
+    .desktop-cis-300
+    {
+        contain-intrinsic-size: 300px;
+    }
+
+    .desktop-cis-315
+    {
+        contain-intrinsic-size: 315px;
+    }
+
+    .desktop-cis-330
+    {
+        contain-intrinsic-size: 330px;
+    }
+
+    .desktop-cis-350
+    {
+        contain-intrinsic-size: 350px;
+    }
+
+    .desktop-cis-365
+    {
+        contain-intrinsic-size: 365px;
+    }
+
+    .desktop-cis-380
+    {
+        contain-intrinsic-size: 380px;
+    }
+
+    .desktop-cis-400
+    {
+        contain-intrinsic-size: 400px;
+    }
+
+    .desktop-cis-410
+    {
+        contain-intrinsic-size: 410px;
+    }
+
+    .desktop-cis-450
+    {
+        contain-intrinsic-size: 450px;
+    }
+
+    .desktop-cis-500
+    {
+        contain-intrinsic-size: 500px;
+    }
+
+    .desktop-cis-550
+    {
+        contain-intrinsic-size: 550px;
+    }
+
+    .desktop-cis-650
+    {
+        contain-intrinsic-size: 650px;
+    }
+
+    .desktop-cis-730
+    {
+        contain-intrinsic-size: 730px;
+    }
+
+    .desktop-cis-825
+    {
+        contain-intrinsic-size: 825px;
+    }
+
+    .desktop-cis-950
+    {
+        contain-intrinsic-size: 950px;
+    }
+
+    .desktop-cis-1080
+    {
+        contain-intrinsic-size: 1080px;
+    }
+
+    .desktop-cis-1200
+    {
+        contain-intrinsic-size: 1200px;
+    }
+
+    .desktop-cis-1530
+    {
+        contain-intrinsic-size: 1530px;
+    }
+
+    .desktop-cis-1800
+    {
+        contain-intrinsic-size: 1800px;
+    }
+}
