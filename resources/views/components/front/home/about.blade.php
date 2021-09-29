@@ -6,15 +6,15 @@
                     <div class="row">
                         <div class="col-md-5 cmd-padding valign">
                             <div class="img1 wow imago" data-wow-delay=".5s">
-                                <img src="{{asset('front/images/intro/1.jpg')}}" alt="">
+                                {!! ImageHelper::createTag('front/images/intro/1.jpg',['width' =>[188], 'height' => [200]],['class'=> 'lazy','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
                             </div>
                         </div>
                         <div class="col-md-7 cmd-padding">
                             <div class="img2 wow imago" data-wow-delay=".3s">
-                                <img src="{{asset('front/images/intro/3.jpg')}}" alt="">
+                                {!! ImageHelper::createTag('front/images/intro/3.jpg',['width' =>[272], 'height' => [240]],['class'=> 'lazy','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
                             </div>
                             <div class="img3 wow imago" data-wow-delay=".8s">
-                                <img src="{{asset('front/images/intro/2.jpg')}}" alt="">
+                                {!! ImageHelper::createTag('front/images/intro/2.jpg',['width' =>[200], 'height' => [200]],['class'=> 'lazy','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
                             </div>
                         </div>
                     </div>
