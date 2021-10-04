@@ -118,7 +118,8 @@ class frontController extends Controller
 
             if (Cookie::has('form'))
             {
-                return json_encode(array('Başarısız!','Lütfen 2 dakika sonra tekrar deneyiniz.', 'error'));
+                Session::flash('message', array('başarısız!','lütfen 2 dakika sonra tekrar deneyiniz.', 'error'));
+                return redirect()->route('contact');
             }
 
 
@@ -163,12 +164,14 @@ class frontController extends Controller
             Mail::to($settings->recipient_email)->send(new sendmail($datas));
 
             Cookie::queue('form', true, 1);
-            return json_encode(array('Başarılı!','Form Gönderildi. En kısa süre içerisinde sizinle irtibata geçilecek.', 'success'));
+            Session::flash('message', array('başarılı!','form gönderildi. en kısa süre içerisinde sizinle irtibata geçilecek.', 'success'));
         }
         catch (\Exception $e)
         {
-            return json_encode(array('Başarısız!','Hata! Lütfen tekrar deneyiniz.', 'error'));
+            Session::flash('message', array('başarısız!','hata! lütfen tekrar deneyiniz.', 'error'));
         }
+
+        return redirect()->route('contact');
     }
 
     public function sitemap()

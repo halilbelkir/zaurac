@@ -145,7 +145,7 @@
 </div>
 
 
-<script src="{{mix('js/front/front.js')}}" async></script>
+<script src="{{mix('js/front/front.js')}}"></script>
 @yield('js')
 </body>
 
