@@ -96,10 +96,7 @@
         <script src="{{asset('front/js/toastr.min.js')}}"></script>
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script>
-            function onSubmit(token)
-            {
-                document.getElementById("contact").submit();
-            }
+            function onSubmit(token){document.getElementById("contact").submit();}
 
             $('form').submit(function (e)
             {
