@@ -11,7 +11,7 @@
                 <div class="col-lg-6">
                     <div class="form md-mb50">
 
-                        <form method="post" action="{{route('contact.send')}}">
+                        <form method="post" id="contact" action="{{route('contact.send')}}">
                             @csrf
                             <div class="messages"></div>
 
@@ -31,8 +31,10 @@
                                         <textarea id="form_message" name="message" placeholder="mesaj" rows="4"
                                                   required="required"></textarea>
                                 </div>
-
-                                <button type="submit" class="btn-curve btn-color form-button"><span>gönder</span></button>
+                                <button class="g-recaptcha btn-curve btn-color form-button"
+                                        data-sitekey="AIzaSyDJHiMBS1q1CjLTaq3OL8NhqSvsQo9Eme4"
+                                        data-callback='onSubmit'
+                                        data-action='submit'><span>gönder</span></button>
                             </div>
                         </form>
                     </div>
@@ -92,8 +94,12 @@
                 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJHiMBS1q1CjLTaq3OL8NhqSvsQo9Eme4&callback=initMap">
         </script>
         <script src="{{asset('front/js/toastr.min.js')}}"></script>
-
+        <script src="https://www.google.com/recaptcha/api.js"></script>
         <script>
+            function onSubmit(token)
+            {
+                document.getElementById("contact").submit();
+            }
 
             $('form').submit(function (e)
             {
