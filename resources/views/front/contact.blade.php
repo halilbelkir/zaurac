@@ -76,7 +76,7 @@
 
     <!-- ==================== Start Map ==================== -->
 
-    <div class="map" id="ieatmaps"></div>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d936.178463128254!2d29.192867757452728!3d41.021067281910796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cace5bb21a8f09%3A0x463d742684d3f049!2zw4dhbWzEsWssIEVtcmUgU2suIE5vOjI0LCAzNDc4MiBEdWR1bGx1IE9yZ2FuaXplIFNhbmF5aSBCw7ZsZ2VzaS_Dh2VrbWVrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1633873326254!5m2!1str!2str"  height="450" style="border:0;width: 100%" allowfullscreen="" loading="lazy"></iframe>
 
     @section('css')
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
@@ -85,14 +85,13 @@
             {
                 z-index: 9999999999999;
             }
+            .grecaptcha-badge
+            {
+                display: none;
+            }
         </style>
     @endsection
     @section('js')
-        <script src="{{asset('front/js/map.js')}}"></script>
-        <script async defer
-                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJHiMBS1q1CjLTaq3OL8NhqSvsQo9Eme4&callback=initMap">
-        </script>
-
         <script src="https://www.google.com/recaptcha/api.js"></script>
         <script src="{{asset('front/js/toastr.min.js')}}"></script>
         <script>
