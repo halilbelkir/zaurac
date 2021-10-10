@@ -34,7 +34,7 @@ class AppServiceProvider extends ServiceProvider
             $title       = $settings->title;
             $keywords    = $settings->tag;
             $description = $settings->description;
-            $ogImage     = asset('front/images/logo.png');
+            $ogImage     = asset('front/images/zaurac.jpg');
 
             if (request()->is('hakkımızda'))
             {
