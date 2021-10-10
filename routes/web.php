@@ -29,6 +29,7 @@
     Route::get('/hizmetlerimiz/{seflink}', [App\Http\Controllers\frontController::class, 'service'])->name('services.detail');
     Route::get('/zauracblog', [App\Http\Controllers\frontController::class, 'blog'])->name('blog.list');
     Route::get('/zauracblog/{seflink}', [App\Http\Controllers\frontController::class, 'blog_detail'])->name('blog.detail');
+    Route::get('/site-haritasi', [App\Http\Controllers\frontController::class, 'sitemap'])->name('sitemap');
     Route::post('/send', [App\Http\Controllers\frontController::class, 'send'])->name('contact.send');
     Route::prefix('yonetimpaneli')->group(function ()
     {

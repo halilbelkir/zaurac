@@ -178,10 +178,8 @@ class frontController extends Controller
     {
         $blog      = Blog::orderBy('order','asc')->get();
         $services  = Services::orderBy('order','asc')->get();
-        $pages     = Pages::all();
-        $team      = Team::all();
         $now       = Carbon::now()->toAtomString();
-        $content   = view('front.sitemap', compact('now','blog','services','pages','team'));
+        $content   = view('front.sitemap', compact('now','blog','services'));
         return response($content)->header('Content-Type', 'application/xml');
     }
 }
