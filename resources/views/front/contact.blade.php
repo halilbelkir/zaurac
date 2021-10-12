@@ -76,8 +76,7 @@
 
     <!-- ==================== Start Map ==================== -->
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d936.178463128254!2d29.192867757452728!3d41.021067281910796!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cace5bb21a8f09%3A0x463d742684d3f049!2zw4dhbWzEsWssIEVtcmUgU2suIE5vOjI0LCAzNDc4MiBEdWR1bGx1IE9yZ2FuaXplIFNhbmF5aSBCw7ZsZ2VzaS_Dh2VrbWVrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1633873326254!5m2!1str!2str"  height="450" style="border:0;width: 100%" allowfullscreen="" loading="lazy"></iframe>
-
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3010.192014757601!2d29.191308015414446!3d41.021054879299534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cacf7b6fa77f13%3A0xf30347555a13e30a!2sZaurac!5e0!3m2!1str!2str!4v1634033042440!5m2!1str!2str" height="450" style="border:0;width: 100%" allowfullscreen="" loading="lazy"></iframe>
     @section('css')
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
         <style>

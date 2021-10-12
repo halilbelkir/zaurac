@@ -39,6 +39,14 @@
     <link rel="stylesheet" type="text/css" href="{{mix('css/front/front.css')}}">
     @yield('css')
     @yield('preload')
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-V1HC7PBYJR"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-V1HC7PBYJR');
+    </script>
 </head>
 
 <body>
