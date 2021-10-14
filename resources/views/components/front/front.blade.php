@@ -11,6 +11,7 @@
     <meta property="og:image" content="{{$ogImage}}" >
     <meta property="og:title" style="text-transform:capitalize;" content="{{$metaTitle}}">
     <meta name="author" content="Zaurac"/>
+    <meta name="facebook-domain-verification" content="1kf7v1xehyo33cxoywlnzwrsn4te0z" />
     <title>{{$metaTitle}}</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/front/images/fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/front/images/fav/apple-icon-60x60.png">
