@@ -13,7 +13,7 @@
     <meta property="og:description" content="{{$description}}" >
     <meta property="og:type" content="website" >
     <meta property="og:url" content="{{request()->fullUrl()}}" >
-    <meta property="fb:app_id" content="2955803241300875" >
+    <meta property="fb:app_id" content="538454817224962" >
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/front/images/fav/apple-icon-57x57.png">
