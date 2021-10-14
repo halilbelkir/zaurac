@@ -20,7 +20,7 @@
     */
 
     Route::get('/', [App\Http\Controllers\frontController::class, 'index'])->name('index');
-    Route::get('/hakkımızda', function () {return view('front.about');})->name('about');
+    Route::get('/hakkimizda', function () {return view('front.about');})->name('about');
     Route::get('/sayfa-bulunamadi', function () {return view('front.notfound');})->name('notFound');
     Route::get('/referanslarimiz', [App\Http\Controllers\frontController::class, 'clients'])->name('clients');
     Route::get('/iletisim', function () {return view('front.contact');})->name('contact');

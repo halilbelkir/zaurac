@@ -10,6 +10,10 @@
     <meta name="description" content="{{$description}}" />
     <meta property="og:image" content="{{$ogImage}}" >
     <meta property="og:title" style="text-transform:capitalize;" content="{{$metaTitle}}">
+    <meta property="og:description" content="{{$description}}" >
+    <meta property="og:type" content="website" >
+    <meta property="og:url" content="{{request()->fullUrl()}}" >
+    <meta property="fb:app_id" content="2955803241300875" >
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
     <link rel="apple-touch-icon" sizes="57x57" href="/front/images/fav/apple-icon-57x57.png">
@@ -25,9 +29,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/front/images/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/front/images/fav/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/front/images/fav/favicon-16x16.png">
-    <meta name="msapplication-TileImage" content="/front/images/fav/ms-icon-144x144.png">
-    <meta name="theme-color" content="#FBC02D">
-    <link rel="manifest" href="/front/images/fav/manifest.json">
+    <meta name="msapplication-TileImage" content="/front/images/fav/ms-icon-144x144.png" >
+    <meta name="theme-color" content="#FBC02D" >
+    <link rel="manifest" href="/front/images/fav/manifest.json" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
