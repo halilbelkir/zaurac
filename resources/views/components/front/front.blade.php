@@ -16,7 +16,7 @@
     <meta property="fb:app_id" content="538454817224962" >
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="front/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="{{asset('front/images/fav/apple-icon-57x57.png')}}">
     <link rel="apple-touch-icon" sizes="60x60" href="/front/images/fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/front/images/fav/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/front/images/fav/apple-icon-76x76.png">
@@ -26,11 +26,11 @@
     <link rel="apple-touch-icon" sizes="152x152" href="/front/images/fav/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/front/images/fav/apple-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192"  href="/front/images/fav/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/front/images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{asset('front/images/fav/favicon-32x32.png')}}">
     <link rel="icon" type="image/png" sizes="96x96" href="/front/images/fav/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/front/images/fav/favicon-16x16.png">
     <meta name="msapplication-TileImage" content="/front/images/fav/ms-icon-144x144.png" >
-    <meta name="theme-color" content="#FBC02D" >
+    <meta name="theme-color" content="#1de6ff" >
     <link rel="manifest" href="/front/images/fav/manifest.json" >
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
