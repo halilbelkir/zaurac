@@ -16,7 +16,7 @@
     <meta property="fb:app_id" content="538454817224962" >
     <meta name="author" content="Zaurac"/>
     <title>{{$metaTitle}}</title>
-    <link rel="apple-touch-icon" sizes="57x57" href="/front/images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="front/images/fav/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/front/images/fav/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/front/images/fav/apple-icon-72x72.png">
     <link rel="apple-touch-icon" sizes="76x76" href="/front/images/fav/apple-icon-76x76.png">
@@ -37,8 +37,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200;300;400;500;600;700&amp;display=swap" rel="stylesheet">
     <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;200;300;400;500;600;700;800;900&display=swap" onload="this.rel='stylesheet'">
-    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 60) }}" media="(min-width: 992px)">
-    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 100, 40) }}" media="(max-width: 991px)">
+    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 42) }}" media="(min-width: 992px)">
+    <link rel="preload" as="image" href="{{ ImageHelper::getImage('front/images/logo-beyaz.png', 150, 42) }}" media="(max-width: 991px)">
     <link rel="preload" as="style" href="{{mix('css/front/preload.css')}}" onload="this.rel='stylesheet'">
     <link rel="stylesheet" type="text/css" href="{{mix('css/front/front.css')}}">
     @yield('css')
@@ -65,8 +65,8 @@
             <div class="logo">
 
                 <a href="{{route('index')}}">
-                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[150], 'height' => [60]],['class'=> 'lazy d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
-                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[100], 'height' => [40]],['class'=> 'lazy d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
+                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[150], 'height' => [42]],['class'=> 'lazy d-none d-sm-none d-md-block d-lg-block d-xl-block d-xxl-block','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
+                    {!! ImageHelper::createTag('front/images/logo-beyaz.png',['width' =>[150], 'height' => [42]],['class'=> 'lazy d-sm-block d-md-none d-lg-none d-xl-none d-xxl-none','alt' => $metaTitle,'title' => $metaTitle],'lazy') !!}
                 </a>
             </div>
             <div class="menu-icon">
@@ -151,7 +151,7 @@
     {{$slot}}
     <footer class="footer-half sub-bg  pb-0">
         <div class="copyrights text-center">
-            <p>© 2021, zaurac</p>
+            <p>© 2022, zaurac</p>
         </div>
     </footer>
 
